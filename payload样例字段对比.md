@@ -20,7 +20,7 @@
                                                  │       "bank_account_id": 1042813323,    ← fundo 的账户主键
       "bank": "cba",                             │       "bank": "cba",
       "institution": "cba",                      │                                         ← wagego 独有
-      "account_type": "savings",                 │       "account_type": "transaction"     ← 枚举取值不同
+      "account_type": "savings",                 │       "account_type": "transaction"   
       "account_holder": "HEIDI ABIGAIL RISELEY", │                                         ← wagego 独有
       "account_holder_type": "single",           │                                         ← wagego 独有
       "account_name": "You Want Saving"          │                                         ← wagego 独有
