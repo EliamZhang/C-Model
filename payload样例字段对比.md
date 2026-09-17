@@ -13,6 +13,7 @@
   "userId": 484579009,                           │   "userId": 484579009,
   "applicationId": 2513560,                      │   "applicationId": 2513560,
   "flowTime": "2026-07-05 23:52:48.0",           │   "flowTime": "2026-07-05 23:52:48.0",
+  "product": "wagego",                           │   "product": "fundo",                   ← 取值随产品不同
   "bank_accounts": [                             │   "bank_accounts": [
     {                                            │     {
       "bsb": "062692",                           │                                         ← wagego 独有
