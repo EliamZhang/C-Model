@@ -57,15 +57,15 @@
 ### 3.1 顶层与 `stats`
 
 ```
-{                                         │ {
-  "userId": 484579009,                    │   "userId": 484579009,
-  "applicationId": 2513560,               │   "applicationId": 2513560,
-  "flowTime": "2026-07-05 23:52:48.0",    │   "flowTime": "2026-07-05 23:52:48.0",
-  "stats": {                              │   "stats": {
-    "txn_raw_input_cnt": 1,               │     "txn_raw_input_cnt": 1,
-    "transaction_date_max": "2026-09-15", │     "transaction_date_max": "2026-02-05",      ← 各自样例的流水最大日期
-    "product": "wagego"                   │     "product": "fundo"                         ← 取值随产品不同
-  },                                      │   },
+{                                                │ {
+  "userId": 484579009,                           │   "userId": 484579009,
+  "applicationId": 2513560,                      │   "applicationId": 2513560,
+  "flowTime": "2026-07-05 23:52:48.0",           │   "flowTime": "2026-07-05 23:52:48.0",
+  "stats": {                                     │   "stats": {
+    "bscat_txn_raw_input_cnt": 1,                │     "bscat_txn_raw_input_cnt": 1,
+    "bscat_transaction_date_max": "2026-09-15",  │     "bscat_transaction_date_max": "2026-02-05",    ← 各自样例的流水最大日期
+    "bscat_product": "wagego"                    │     "bscat_product": "fundo"                       ← 取值随产品不同
+  },                                             │   },
 ```
 
 ### 3.2 `bank_accounts`
@@ -90,9 +90,9 @@
       "trx_type": "",                                   │       "trx_type": null,
                                                         │       "transaction_id": 1423884392,                      ← fundo 独有
 ──────────────────────────────────────── ── 以下为出参新增的加工字段 ── ─────────────────────────────────────────
-      "counterparty": "Uber",                           │       "counterparty": "Uber",
+      "bscat_counterparty": "Uber",                     │       "bscat_counterparty": "Uber",
       "bscat": "Transport",                             │       "bscat": "Transport",
-      "stream_id": null                                 │       "stream_id": null
+      "bscat_stream_id": null                           │       "bscat_stream_id": null
     }                                                   │     }
   ],                                                    │   ],
 ```
@@ -105,51 +105,51 @@
   "summaries": {
     "income_summary": [
       {
-        "stream_id": "wage_001",
-        "income_category": "salary_payg",
-        "transaction_start_date": "2025-11-20",
-        "transaction_end_date": "2026-05-07",
-        "status": "active",
-        "transaction_count": 13,
-        "total_income_amount": 39962.91,
-        "average_income_amount": 3074.07,
-        "median_income_amount": 3214.0,
-        "latest_income_amount": 3314.01,
-        "estimated_monthly_income": 6963.666666666667,
-        "frequency": "fortnightly",
-        "frequency_day": "Thursday",
-        "predicted_next_income_date": "2026-05-21"
+        "bscat_stream_id": "wage_001",
+        "bscat_income_category": "salary_payg",
+        "bscat_transaction_start_date": "2025-11-20",
+        "bscat_transaction_end_date": "2026-05-07",
+        "bscat_status": "active",
+        "bscat_transaction_count": 13,
+        "bscat_total_income_amount": 39962.91,
+        "bscat_average_income_amount": 3074.07,
+        "bscat_median_income_amount": 3214.0,
+        "bscat_latest_income_amount": 3314.01,
+        "bscat_estimated_monthly_income": 6963.666666666667,
+        "bscat_frequency": "fortnightly",
+        "bscat_frequency_day": "Thursday",
+        "bscat_predicted_next_income_date": "2026-05-21"
       }
     ],
     "liability_summary": [
       {
-        "stream_id": "loan_004",
-        "liability_category": "Non SACC Loans",
-        "transaction_start_date": "2025-11-19",
-        "transaction_end_date": "2026-03-11",
-        "status": "Closed",
-        "funded_amount": 0.0,
-        "repaid_amount": 750.48,
-        "repayment_amount": null,
-        "recent_fn_repay_amount": 0.0,
-        "frequency": "fortnightly",
-        "frequency_day": "Wednesday",
-        "predicted_closing_date": "NA"
+        "bscat_stream_id": "loan_004",
+        "bscat_liability_category": "Non SACC Loans",
+        "bscat_transaction_start_date": "2025-11-19",
+        "bscat_transaction_end_date": "2026-03-11",
+        "bscat_status": "Closed",
+        "bscat_funded_amount": 0.0,
+        "bscat_repaid_amount": 750.48,
+        "bscat_repayment_amount": null,
+        "bscat_recent_fn_repay_amount": 0.0,
+        "bscat_frequency": "fortnightly",
+        "bscat_frequency_day": "Wednesday",
+        "bscat_predicted_closing_date": "NA"
       }
     ],
     "category_summary": [
       {
         "bscat": "Transport",
-        "transaction_start_date": "2026-02-05",
-        "transaction_end_date": "2026-02-05",
-        "transaction_count": 1,
-        "total_amount": 12.32,
-        "average_amount": 12.32,
-        "median_amount": 12.32,
-        "latest_amount": 12.32
+        "bscat_transaction_start_date": "2026-02-05",
+        "bscat_transaction_end_date": "2026-02-05",
+        "bscat_transaction_count": 1,
+        "bscat_total_amount": 12.32,
+        "bscat_average_amount": 12.32,
+        "bscat_median_amount": 12.32,
+        "bscat_latest_amount": 12.32
       }
     ]
   }
 ```
 
-> **不重复输出**：`applicationId`（顶层已有）、`bscat` / `counterparty`（`transactions[]` 已有）均不在 summary 里重复；summary 只保留 `stream_id` 作关联主键，加上本表独有的聚合指标。`category_summary` 的 `bscat` 是聚合维度本身，故保留。
+> **不重复输出**：`applicationId`（顶层已有）、`bscat` / `bscat_counterparty`（`transactions[]` 已有）均不在 summary 里重复；summary 只保留 `bscat_stream_id` 作关联主键，加上本表独有的聚合指标。`category_summary` 的 `bscat` 是聚合维度本身，故保留。
