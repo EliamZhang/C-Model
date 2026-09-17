@@ -11,6 +11,7 @@
     {
       "bsb": "062692",
       "account_number": "76126685",
+      "bank": "cba",
       "institution": "cba",
       "account_type": "savings",
       "account_holder": "HEIDI ABIGAIL RISELEY",
@@ -22,7 +23,6 @@
     {
       "secondary_category": "",
       "transaction_date": "2026-09-15",
-      "institution": "cba",
       "amount": -9.97,
       "account_number": "31890460",
       "balance": 19.01,
@@ -41,7 +41,6 @@
       {
         "stream_id": "wage_001",
         "income_category": "salary_payg",
-        "bank_account_id": 1042813323,
         "transaction_start_date": "2025-11-20",
         "transaction_end_date": "2026-05-07",
         "status": "active",
@@ -60,7 +59,6 @@
       {
         "stream_id": "loan_004",
         "liability_category": "Non SACC Loans",
-        "bank_account_id": 1042813323,
         "transaction_start_date": "2025-11-19",
         "transaction_end_date": "2026-03-11",
         "status": "Closed",
@@ -76,7 +74,6 @@
     "category_summary": [
       {
         "bscat": "Transport",
-        "bank_account_id": 1042813323,
         "transaction_start_date": "2026-02-05",
         "transaction_end_date": "2026-02-05",
         "transaction_count": 1,

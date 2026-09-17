@@ -5,6 +5,7 @@
   "bank_accounts": [
     {
       "bank_account_id": 1042813323,
+      "account_number": "76126685",
       "account_type": "transaction",
       "bank": "cba"
     }
@@ -20,6 +21,7 @@
       "third_party": "UBER",
       "transaction_date": "2026-02-05",
       "transaction_id": 1423884392,
+      "account_number": "76126685",
       "trx_type": null
     }
   ]

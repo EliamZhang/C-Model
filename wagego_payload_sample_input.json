@@ -6,6 +6,7 @@
     {
       "bsb": "062692",
       "account_number": "76126685",
+      "bank": "cba",
       "institution": "cba",
       "account_type": "savings",
       "account_holder": "HEIDI ABIGAIL RISELEY",
@@ -17,7 +18,6 @@
     {
       "secondary_category": "",
       "transaction_date": "2026-09-15",
-      "institution": "cba",
       "amount": 1320.15,
       "account_number": "31890460",
       "balance": 1339.16,

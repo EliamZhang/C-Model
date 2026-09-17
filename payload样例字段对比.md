@@ -16,9 +16,10 @@
   "bank_accounts": [                             │   "bank_accounts": [
     {                                            │     {
       "bsb": "062692",                           │                                         ← wagego 独有
-      "account_number": "76126685",              │                                         ← wagego 的账户主键
+      "account_number": "76126685",              │       "account_number": "76126685",
                                                  │       "bank_account_id": 1042813323,    ← fundo 的账户主键
-      "institution": "cba",                      │       "bank": "cba",                    ← 命名不同
+      "bank": "cba",                             │       "bank": "cba",
+      "institution": "cba",                      │                                         ← wagego 独有
       "account_type": "savings",                 │       "account_type": "transaction"     ← 枚举取值不同
       "account_holder": "HEIDI ABIGAIL RISELEY", │                                         ← wagego 独有
       "account_holder_type": "single",           │                                         ← wagego 独有
@@ -41,8 +42,8 @@
       "third_party": "External Transfers",                          │       "third_party": "UBER",
       "trx_type": "",                                               │       "trx_type": null,
       "secondary_category": "",                                     │                                                          ← wagego 独有
-      "institution": "cba",                                         │                                                          ← wagego 独有
-      "account_number": "31890460"                                  │       "bank_account_id": 1042813323,                     ← 账户外键，类型不同
+      "account_number": "31890460"                                  │       "account_number": "76126685",
+                                                                    │       "bank_account_id": 1042813323,                     ← 账户外键，类型不同
                                                                     │       "transaction_id": 1423884392                       ← fundo 独有
     }                                                               │     }
   ]                                                                 │   ]
@@ -77,8 +78,8 @@
   "transactions": [                                     │   "transactions": [
     {                                                   │     {
       "secondary_category": "",                         │                                                          ← wagego 独有
-      "institution": "cba",                             │                                                          ← wagego 独有
-      "account_number": "31890460",                     │       "bank_account_id": 1042813323,                     ← 账户外键，类型不同
+      "account_number": "31890460",                     │       "account_number": "76126685",
+                                                        │       "bank_account_id": 1042813323,                     ← 账户外键，类型不同
       "transaction_date": "2026-09-15",                 │       "transaction_date": "2026-02-05",
       "amount": -9.97,                                  │       "amount": -12.32,
       "balance": 19.01,                                 │       "balance": -126.28,
@@ -106,7 +107,6 @@
       {
         "stream_id": "wage_001",
         "income_category": "salary_payg",
-        "bank_account_id": 1042813323,
         "transaction_start_date": "2025-11-20",
         "transaction_end_date": "2026-05-07",
         "status": "active",
@@ -125,7 +125,6 @@
       {
         "stream_id": "loan_004",
         "liability_category": "Non SACC Loans",
-        "bank_account_id": 1042813323,
         "transaction_start_date": "2025-11-19",
         "transaction_end_date": "2026-03-11",
         "status": "Closed",
@@ -141,7 +140,6 @@
     "category_summary": [
       {
         "bscat": "Transport",
-        "bank_account_id": 1042813323,
         "transaction_start_date": "2026-02-05",
         "transaction_end_date": "2026-02-05",
         "transaction_count": 1,
@@ -154,5 +152,4 @@
   }
 ```
 
-> **不重复输出**：`applicationId`（顶层已有）、`bscat` / `counterparty`（`transactions[]` 已有）均不在 summary 里重复；summary 只保留 `stream_id` / `bank_account_id` 作关联主键，加上本表独有的聚合指标。`category_summary` 的 `bscat` 是聚合维度本身，故保留。
-> 遗留：`bank_account_id` 用的是 fundo 的账户 ID（`1042813323`），wagego 入参账户表无此字段（只有 `account_number`）。
+> **不重复输出**：`applicationId`（顶层已有）、`bscat` / `counterparty`（`transactions[]` 已有）均不在 summary 里重复；summary 只保留 `stream_id` 作关联主键，加上本表独有的聚合指标。`category_summary` 的 `bscat` 是聚合维度本身，故保留。
