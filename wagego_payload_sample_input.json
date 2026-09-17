@@ -1,0 +1,31 @@
+{
+  "userId": 484579009,
+  "applicationId": 2513560,
+  "flowTime": "2026-07-05 23:52:48.0",
+  "bank_accounts": [
+    {
+      "bsb": "062692",
+      "account_number": "76126685",
+      "institution": "cba",
+      "account_type": "savings",
+      "account_holder": "HEIDI ABIGAIL RISELEY",
+      "account_holder_type": "single",
+      "account_name": "You Want Saving"
+    }
+  ],
+  "raw_transactions": [
+    {
+      "secondary_category": "",
+      "transaction_date": "2026-09-15",
+      "institution": "cba",
+      "amount": 1320.15,
+      "account_number": "31890460",
+      "balance": 1339.16,
+      "dr_cr": "credit",
+      "trx_type": "",
+      "text": "Direct Credit 421520 Doyle Racing Pty Doyle Racing",
+      "category": "External Transfers",
+      "third_party": "External Transfers"
+    }
+  ]
+}

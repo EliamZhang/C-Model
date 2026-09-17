@@ -1,0 +1,85 @@
+{
+  "userId": 484579009,
+  "applicationId": 2513560,
+  "flowTime": "2026-07-05 23:52:48.0",
+  "stats": {
+    "txn_raw_input_cnt": 1,
+    "transaction_date_max": "2026-02-05",
+    "product": "fundo"
+  },
+  "bank_accounts": [
+    {
+      "bank_account_id": 1042813323,
+      "account_type": "transaction",
+      "bank": "cba"
+    }
+  ],
+  "transactions": [
+    {
+      "amount": -12.32,
+      "balance": -126.28,
+      "bank_account_id": 1042813323,
+      "category": "Transport",
+      "dr_cr": "debit",
+      "text": "UBER *TRIP HELP.UBER.C 14518236738 AUS",
+      "third_party": "UBER",
+      "transaction_date": "2026-02-05",
+      "transaction_id": 1423884392,
+      "trx_type": null,
+      "counterparty": "Uber",
+      "bscat": "Transport",
+      "stream_id": null
+    }
+  ],
+  "summaries": {
+    "income_summary": [
+      {
+        "stream_id": "wage_001",
+        "income_category": "salary_payg",
+        "bank_account_id": 1042813323,
+        "transaction_start_date": "2025-11-20",
+        "transaction_end_date": "2026-05-07",
+        "status": "active",
+        "transaction_count": 13,
+        "total_income_amount": 39962.91,
+        "average_income_amount": 3074.07,
+        "median_income_amount": 3214.0,
+        "latest_income_amount": 3314.01,
+        "estimated_monthly_income": 6963.666666666667,
+        "frequency": "fortnightly",
+        "frequency_day": "Thursday",
+        "predicted_next_income_date": "2026-05-21"
+      }
+    ],
+    "liability_summary": [
+      {
+        "stream_id": "loan_004",
+        "liability_category": "Non SACC Loans",
+        "bank_account_id": 1042813323,
+        "transaction_start_date": "2025-11-19",
+        "transaction_end_date": "2026-03-11",
+        "status": "Closed",
+        "funded_amount": 0.0,
+        "repaid_amount": 750.48,
+        "repayment_amount": null,
+        "recent_fn_repay_amount": 0.0,
+        "frequency": "fortnightly",
+        "frequency_day": "Wednesday",
+        "predicted_closing_date": "NA"
+      }
+    ],
+    "category_summary": [
+      {
+        "bscat": "Transport",
+        "bank_account_id": 1042813323,
+        "transaction_start_date": "2026-02-05",
+        "transaction_end_date": "2026-02-05",
+        "transaction_count": 1,
+        "total_amount": 12.32,
+        "average_amount": 12.32,
+        "median_amount": 12.32,
+        "latest_amount": 12.32
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "userId": 484579009,
+  "applicationId": 2513560,
+  "flowTime": "2026-07-05 23:52:48.0",
+  "stats": {
+    "txn_raw_input_cnt": 1,
+    "transaction_date_max": "2026-09-15",
+    "product": "wagego"
+  },
+  "bank_accounts": [
+    {
+      "bsb": "062692",
+      "account_number": "76126685",
+      "institution": "cba",
+      "account_type": "savings",
+      "account_holder": "HEIDI ABIGAIL RISELEY",
+      "account_holder_type": "single",
+      "account_name": "You Want Saving"
+    }
+  ],
+  "transactions": [
+    {
+      "secondary_category": "",
+      "transaction_date": "2026-09-15",
+      "institution": "cba",
+      "amount": -9.97,
+      "account_number": "31890460",
+      "balance": 19.01,
+      "dr_cr": "debit",
+      "trx_type": "",
+      "text": "1630-REDDY EXPRESS BROA BROADMEADOW AU",
+      "category": "Automotive",
+      "third_party": "Reddy Express",
+      "counterparty": "Uber",
+      "bscat": "Transport",
+      "stream_id": null
+    }
+  ],
+  "summaries": {
+    "income_summary": [
+      {
+        "stream_id": "wage_001",
+        "income_category": "salary_payg",
+        "bank_account_id": 1042813323,
+        "transaction_start_date": "2025-11-20",
+        "transaction_end_date": "2026-05-07",
+        "status": "active",
+        "transaction_count": 13,
+        "total_income_amount": 39962.91,
+        "average_income_amount": 3074.07,
+        "median_income_amount": 3214.0,
+        "latest_income_amount": 3314.01,
+        "estimated_monthly_income": 6963.666666666667,
+        "frequency": "fortnightly",
+        "frequency_day": "Thursday",
+        "predicted_next_income_date": "2026-05-21"
+      }
+    ],
+    "liability_summary": [
+      {
+        "stream_id": "loan_004",
+        "liability_category": "Non SACC Loans",
+        "bank_account_id": 1042813323,
+        "transaction_start_date": "2025-11-19",
+        "transaction_end_date": "2026-03-11",
+        "status": "Closed",
+        "funded_amount": 0.0,
+        "repaid_amount": 750.48,
+        "repayment_amount": null,
+        "recent_fn_repay_amount": 0.0,
+        "frequency": "fortnightly",
+        "frequency_day": "Wednesday",
+        "predicted_closing_date": "NA"
+      }
+    ],
+    "category_summary": [
+      {
+        "bscat": "Transport",
+        "bank_account_id": 1042813323,
+        "transaction_start_date": "2026-02-05",
+        "transaction_end_date": "2026-02-05",
+        "transaction_count": 1,
+        "total_amount": 12.32,
+        "average_amount": 12.32,
+        "median_amount": 12.32,
+        "latest_amount": 12.32
+      }
+    ]
+  }
+}

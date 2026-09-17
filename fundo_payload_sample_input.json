@@ -1,0 +1,26 @@
+{
+  "userId": 484579009,
+  "applicationId": 2513560,
+  "flowTime": "2026-07-05 23:52:48.0",
+  "bank_accounts": [
+    {
+      "bank_account_id": 1042813323,
+      "account_type": "transaction",
+      "bank": "cba"
+    }
+  ],
+  "illion_raw_transactions": [
+    {
+      "amount": -12.32,
+      "balance": -126.28,
+      "bank_account_id": 1042813323,
+      "category": "Transport",
+      "dr_cr": "debit",
+      "text": "UBER *TRIP HELP.UBER.C 14518236738 AUS",
+      "third_party": "UBER",
+      "transaction_date": "2026-02-05",
+      "transaction_id": 1423884392,
+      "trx_type": null
+    }
+  ]
+}
