@@ -20,7 +20,7 @@
       "secondary_category": "",
       "transaction_date": "2026-09-15",
       "amount": 1320.15,
-      "account_number": "31890460",
+      "bank_account_number": "31890460",
       "balance": 1339.16,
       "dr_cr": "credit",
       "trx_type": "",

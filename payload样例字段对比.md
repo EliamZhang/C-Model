@@ -43,7 +43,7 @@
       "third_party": "External Transfers",                          │       "third_party": "UBER",
       "trx_type": "",                                               │       "trx_type": null,
       "secondary_category": "",                                     │                                                          ← wagego 独有
-      "account_number": "31890460"                                  │       "account_number": "76126685",
+      "bank_account_number": "31890460"                             │       "account_number": "76126685",
                                                                     │       "bank_account_id": 1042813323,                     ← 账户外键，类型不同
                                                                     │       "transaction_id": 1423884392                       ← fundo 独有
     }                                                               │     }
@@ -79,7 +79,7 @@
   "bscat_transactions": [                               │   "bscat_transactions": [
     {                                                   │     {
       "secondary_category": "",                         │                                                          ← wagego 独有
-      "account_number": "31890460",                     │       "account_number": "76126685",
+      "bank_account_number": "31890460",                │       "account_number": "76126685",
                                                         │       "bank_account_id": 1042813323,                     ← 账户外键，类型不同
       "transaction_date": "2026-09-15",                 │       "transaction_date": "2026-02-05",
       "amount": -9.97,                                  │       "amount": -12.32,
